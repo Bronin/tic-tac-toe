@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font and external scripts -->
+    <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- App specific style and scripts -->
+    <link rel="stylesheet" type="text/css" href="appstyle.css">
+    <title>Pomodoro - Jordan Roquet</title>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal" id="choiceModal" tabindex="-1" role="dialog" aria-labelledby="choiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="choiceModalLabel">Choose your Player</h5>
+        </div>
+        <div class="modal-body text-center">
+            Would you like to be X's or O's?
+        </div>
+        <div class="modal-footer">
+            <button value = "1" type="button" class="btn btn-primary" data-dismiss="modal">X's</button>
+            <button value = "0" type="button" class="btn btn-primary" data-dismiss="modal">O's</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container board text-center">
+        <div class="board-row row">
+        <div id="0,0" class="col-4 tile" onclick="OnClick(id)">
+            <div id="0,0-cont" class="cont">
+            </div>
+        </div>
+        <div id="0,1" class="col-4 tile center-tile" onclick="OnClick(id)">
+            <div id="0,1-cont" class="cont">
+            </div>
+        </div>
+        <div id="0,2" class="col-4 tile" onclick="OnClick(id)">
+            <div id="0,2-cont" class="cont">
+            </div>
+        </div>
+        </div>
+        <div class="board-row center-row row">
+        <div id="1,0" class="col-4 tile" onclick="OnClick(id)">
+            <div id="1,0-cont" class="cont">
+            </div>
+        </div>
+        <div id="1,1" class="col-4 tile center-tile" onclick="OnClick(id)">
+            <div id="1,1-cont" class="cont">
+            </div>
+        </div>
+        <div id="1,2" class="col-4 tile" onclick="OnClick(id)">
+            <div id="1,2-cont" class="cont">
+            </div>
+        </div>
+        </div>
+        <div class="board-row row">
+        <div id="2,0" class="col-4 tile" onclick="OnClick(id)">
+            <div id="2,0-cont" class="cont">
+            </div>
+        </div>
+        <div id="2,1" class="col-4 tile center-tile" onclick="OnClick(id)">
+            <div id="2,1-cont" class="cont">
+            </div>
+        </div>
+        <div id="2,2" class="col-4 tile" onclick="OnClick(id)">
+            <div id="2,2-cont" class="cont">
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container text-center">
+        <script type="text/javascript" src="appscript.js"></script>
+        <div class="footer">
+        <p>Tic Tac Toe
+            <br> Site designed and coded by Jordan Roquet</p>
+        </div>
+    </div>
+</footer>

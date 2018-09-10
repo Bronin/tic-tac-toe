@@ -1,0 +1,41 @@
+html,body{
+  background-color: #333331;
+  height: 95%;
+}
+
+footer{
+  margin-top: 1%;
+  font-size: 30px;
+  color: #D3E0E2;
+}
+
+.board{
+  margin-top: 2%;
+  height: 100%;
+}
+
+.board-row{
+  height: 33.3333%;
+}
+
+.center-row{
+  border-style: solid;
+  border-width: 6px 0px 6px 0px;
+  border-color: #D3E0E2;
+}
+
+.center-tile{
+  border-style: solid;
+  border-width: 0px 6px 0px 6px;
+  border-color: #D3E0E2;
+}
+
+.tile{
+  height: 100%;
+  font-size: 150px;
+  color: #D3E0E2;
+}
+
+.modal-footer{
+  margin: auto;
+}
